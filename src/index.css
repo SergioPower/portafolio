@@ -1,0 +1,70 @@
+
+:root{
+  --color1:rgb(69 69 243 / 75.1%);
+  --color2:#1c31a5;
+  --color3:#101f78;
+  --color4:#020f59;
+  --color5:#020f59;
+  --background:#010937;
+  --color-text:#f5f5ee;
+}
+
+body{
+  font-family: Sora, sans-serif;
+  background: var(--background);
+  color:var(--color-text);
+  margin: 25px 65px;
+}
+
+li {
+  margin: 15px;
+  list-style: none;
+
+}
+
+.shadow{
+  text-shadow:0 0 9px;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.container{
+  height: 40px;
+}
+
+a:hover{
+  color: var(--color1);
+}
+
+#logo{
+  font-size:2.5rem;
+  margin:0;
+
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+}
+
+ul{
+  margin: 0;
+  display:flex;
+  justify-content:space-evenly;
+  padding: 0;
+
+}
+
+#navbar{
+  display:flex;
+  align-items:center;
+  justify-content: space-evenly;
+
+}
+
+.saludo{
+  font-size:3rem
+}
