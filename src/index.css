@@ -7,6 +7,7 @@
   --color5:#020f59;
   --background:#010937;
   --color-text:#f5f5ee;
+  --color-bottom:linear-gradient(90deg, rgb(9 9 121 / 100%) 0%, rgb(0 153 255 / 100%) 100%);
 }
 
 body{
@@ -22,8 +23,38 @@ li {
 
 }
 
-.shadow{
-  text-shadow:0 0 9px;
+pre{
+  font-weight: 600;
+  text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 20px #fff,0 0 40px #0ff,0 0 80px #0ff;
+  animation: 500ms linear parpadeo;
+}
+
+.neon{
+  text-shadow: 0 0 5px  ;
+}
+
+.neon span{
+  animation: 500ms linear parpadeo;
+}
+
+.delay1{
+  animation-delay: 0.8s;
+  animation-duration: 1s;
+  
+}
+
+.neon .delay2{
+  animation-delay: 1.4s;
+  animation-duration: 750ms;
+}
+
+.neon .delay3{
+  animation-delay: 2.4s;
+  animation-duration: 1.5s;
+}
+
+.neon .delay4{
+  animation-delay: 3.5s;
 }
 
 a {
@@ -68,4 +99,42 @@ ul{
 
 .saludo{
   font-size:3rem
+}
+
+.foto-parrafo{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.images{
+  width: 230px;
+  position: absolute;
+  border-radius: 7px;
+  top:0;
+  left: 7%;
+  box-shadow: 10px 10px #09f;
+  
+}
+picture{
+  margin-right: 100px;
+}
+
+.foto-parrafo p{
+  width: 50%;
+  line-height: 2em;
+}
+
+@keyframes parpadeo{
+  0%{opacity: 0%;}
+  10%{opacity: 100%;}
+  20%{opacity: 0%;}
+  40%{opacity: 100%;}
+  50%{opacity: 0%;}
+  60%{opacity: 100%;}
+  80%{opacity: 0%;}
+  100%{opacity: 100%;}
+
+  
+
 }
