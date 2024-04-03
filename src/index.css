@@ -82,6 +82,7 @@ a:hover{
   text-align: center;
   animation: zoom 3.5s linear ;
 }
+
 @keyframes zoom {
   50%{
     transform: scale(1.5);
@@ -149,5 +150,7 @@ a > img:hover{
 
 .experience{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  place-content: center center;
 }
