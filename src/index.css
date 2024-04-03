@@ -26,7 +26,7 @@ pre{
   font-weight: 600;
 }
 
-a {
+#navbar a {
   color: var(--color-text);
   text-decoration: none;
 }
@@ -35,7 +35,7 @@ a {
   height: 200px;
 }
 
-a:hover{
+#navbar a:hover{
   color: var(--color1);
 }
 
@@ -106,8 +106,10 @@ a:hover{
 }
 
 article {
-  width: 48%;
+  width: 90%;
   line-height: 1.8em;
+  height: 330px;
+  overflow: hidden;
  
 }
 
@@ -122,35 +124,57 @@ article > p{
   margin-bottom: 18px;
 }
 
-section > header{
+section > header, footer > header{
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-size: 1.5rem;
 }
 
-a > img{
+.cards a > img{
   width: 100%;
   border-radius: 7px;
   box-shadow:  0 0 20px #001,20px 20px #09f;
-  transition: 1s;
+  
 }
 
 .cards{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 150px;
-  height: 1300px;
+  min-height: 1300px;
   padding: 100px; 
+  
 }
 
-a > img:hover{
+.cards img{
+  transition: 1s;
+}
+
+.cards a :hover{
   transform: scale(1.1);
   transition: 1s;
 }
 
 .experience{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  place-content: center center;
+  min-height: 500px;
+  padding: 50px;
+  place-items: center center;
+  max-width: 1000px;
+  margin:  0 auto;
+  margin-top: ;
+  
+}
+
+.icons{
+  border-radius: 5px;
+}
+
+.icons:hover{
+  transform: scale(1.1);
+  transition: 0.5s; 
+  box-shadow:
+  0 0 10px #fff, 0 0 15px #fff;
 }
