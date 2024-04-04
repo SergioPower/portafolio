@@ -184,7 +184,7 @@ section > header{
   margin-bottom: 70px;
 }
 
-.perfiles-link{
+#profile-link{
   color: var(--color-text);
   text-decoration: none;
   font-size: 2rem;

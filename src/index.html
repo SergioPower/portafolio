@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi_portafolio</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
@@ -31,7 +31,7 @@
       <h1 class="saludo">¡Hey! I'm Sergio</h1> <!--ok*/-->
       <div id="foto-parrafo">
         <picture>
-          <img class="images" src="assets/foto-sergi.jpg" alt="foto">
+          <img class="images" src="blob:https://web.whatsapp.com/79bfe436-4074-43bb-8159-d9f19c39db9a" alt="foto">
         </picture>
         <article>
           <header>ABOUT ME</header>
@@ -47,32 +47,32 @@
 
     <div class="container"></div>
 
-    <section id="project-tile"> <!--ok*/-->
+    <section id="projects"> <!--ok*/-->
       <!--debe tener al menos un enlace a un proyecto-->
       <header>PROJECTS</header>
       <div class="cards">
         <a class="project" href="https://codepen.io/SergioPower/pen/NWmvGVe" target="_blank">
           <img src="https://shots.codepen.io/username/pen/NWmvGVe-512.webp?version=1711489429" alt="">
         </a>
-        <article>
+        <article class="project-tile">
           <header>FORMULARIO</header>
           <p>Aqui empeze a realizar un formulario basico agregando diferentes tipos de input y empezar a darle una mejor
             vista a la pagina implementando css.</p>
         </article>
-        <a class="project" href="https://codepen.io/SergioPower/details/VwNymYr" target="_blank">
-          <img src="assets/image.png" alt="Previwe Formulario">
+        <a class="project" href="https://codepen.io/SergioPower/pen/VwNymYr" target="_blank">
+          <img src="https://shots.codepen.io/username/pen/VwNymYr-320.webp?version=1712256679" alt="Previwe Formulario">
         </a>
-        <article>
+        <article class="project-tile">
           <header>WIKI</header>
           <p>Es este proyecto aprendi a hacer un mejor uso de clases en css y hacer un mejor layout a mi pagina
             añadiendo un navegador con sus respectivos atajos diferentes partes del main. También hice el diseño con
             grid para una mejor optimización.
           </p>
-        </article>
+        </article >
         <a class="project" href="https://codepen.io/SergioPower/pen/RwOxoLY" target="_blank">
-          <img src="assets/Captura de pantalla 2024-04-02 202714.png" alt="Previwe TRIBUTO">
+          <img src="https://shots.codepen.io/username/pen/RwOxoLY-512.webp?version=1712111180" alt="Previwe TRIBUTO">
         </a>
-        <article>
+        <article class="project-tile">
           <header>PAGINA TRIBUTO</header>
           <p>Con esta pagina aprendi a crear un header fijo, agregar fondos ajustando su tamaño y crear un diseño
             responsivo haciendolo con las herramientas maquetado de caja.</p>
@@ -85,15 +85,15 @@
     <section id="experience">
       <header>EXPERIENCE</header>
       <section class="experience">
-        <img class="icons" src="assets/logos/icons8-html5-72.png" alt="html">
-        <img class="icons" src="assets/logos/icons8-css3-72.png" alt="css">
-        <img class="icons" src="assets/logos/icons8-javascript-72.png" alt="javaScript">
-        <img class="icons" src="assets/logos/icons8-python-72.png" alt="python">
-        <img class="icons" src="assets/logos/icons8-java-72.png" alt="java">
-        <img class="icons" src="assets/logos/icons8-mysql-72.png" alt="mysql">
-        <img class="icons" src="assets/logos/icons8-react-72.png" alt="react">
-        <img class="icons" src="assets/logos/icons8-node-js-72.png" alt="nodejs">
-        <img class="icons" src="assets/logos/icons8-express-js-72.png" alt="express">
+        <img class="icons" width="48" height="48" src="https://img.icons8.com/fluency/48/html-5.png" alt="html-5"/>
+        <img class="icons" src="https://img.icons8.com/color/72/css3.png" alt="css">
+        <img class="icons" src="https://img.icons8.com/color/72/css3.png" alt="javaScript">
+        <img class="icons" width="72" height="72" src="https://img.icons8.com/fluency/72/python.png" alt="python"/>
+        <img class="icons" src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" alt="java">
+        <img class="icons" src="https://img.icons8.com/color/48/mysql-logo.png" alt="mysql">
+        <img class="icons" src="https://img.icons8.com/office/72/react.png" alt="react">
+        <img class="icons" src="https://img.icons8.com/fluency/48/node-js.png" alt="nodejs">
+        <img class="icons" src="https://img.icons8.com/nolan/72/express-js.png" alt="express">
       </section>
     </section>
 
@@ -102,20 +102,20 @@
     <section id="contact">
       <header>CONTACT</header>
       <div id="perfiles">
-        <a class="perfiles-link" href="https://github.com/SergioPower">
+        <a id="profile-link" href="https://github.com/SergioPower" target="_blank">
           <img width="48" height="48" src="https://img.icons8.com/ios-filled/48/FFFFFF/github.png" alt="github" />
           GitHub
         </a>
-        <a class="perfiles-link" href="https://www.freecodecamp.org/espanol/fcceba1d869-aa0f-469e-aa78-7724bec3d3a5">
+        <a id="profile-link" href="https://www.freecodecamp.org/espanol/fcceba1d869-aa0f-469e-aa78-7724bec3d3a5" target="_blank">
           <img width="60" height="60" src="https://img.icons8.com/windows/60/FFFFFF/free-code-camp.png"
             alt="free-code-camp" />
           freeCodeCamp
         </a>
-        <a class="perfiles-link" href="">
+        <a id="profile-link" href="" target="_blank">
           <img width="48" height="48" src="https://img.icons8.com/material-rounded/48/FFFFFF/mail.png" alt="mail" />
           Send a mail
         </a>
-        <a class="perfiles-link" href="">
+        <a id="profile-link" href="" target="_blank">
           <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp--v1.png"
             alt="whatsapp--v1" />
           Whatsapp
