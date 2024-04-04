@@ -146,7 +146,7 @@ section > header, footer > header{
   
 }
 
-.cards img{
+.cards a img{
   transition: 1s;
 }
 
@@ -164,7 +164,6 @@ section > header, footer > header{
   place-items: center center;
   max-width: 1000px;
   margin:  0 auto;
-  margin-top: ;
   
 }
 
